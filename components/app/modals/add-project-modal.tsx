@@ -54,7 +54,7 @@ function AddProjectModalHelper({
   const [debouncedDomain] = useDebounce(domain, 500);
   useEffect(() => {
     if (debouncedDomain.length > 0 && !domainError) {
-      fetch(`/api/projects/dub.sh/domains/${debouncedDomain}/exists`).then(
+      fetch(`/api/projects/go.ginetta.net/domains/${debouncedDomain}/exists`).then(
         async (res) => {
           if (res.status === 200) {
             const exists = await res.json();
