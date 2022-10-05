@@ -13,7 +13,9 @@ export default async function handler(
 
   // GET /api/links – get all dub.sh links created by the user
   if (req.method === "GET") {
-    const response = await getLinksForProject("dub.sh", session.user.id);
+    // TODO SAM: implement authorisation as requested by Simon
+    // const response = await getLinksForProject("go.ginetta.net", session.user.id);
+    const response = await getLinksForProject("go.ginetta.net");
     return res.status(200).json(response);
 
     // POST /api/links – create a new link
@@ -23,7 +25,7 @@ export default async function handler(
       return res.status(400).json({ error: "Missing url" });
     }
     const response = await addLink(
-      "dub.sh",
+      "go.ginetta.net",
       { url, key, title },
       session.user.id
     );
