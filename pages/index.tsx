@@ -38,8 +38,6 @@ export default function Home({ stars }: { stars: number }) {
       <Hero />
       {/* <Demo /> */}
       <Globe />
-      <Features stars={stars} />
-      <Pricing />
     </HomeLayout>
   );
 }
