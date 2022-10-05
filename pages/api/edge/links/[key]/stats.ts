@@ -20,8 +20,9 @@ export default async function handler(req: NextRequest) {
       | undefined;
     const start = Date.now() - intervalData[interval || "24h"].milliseconds;
     const end = Date.now();
+    console.log(`go.ginetta.net:clicks:${key}`);
     const response = await redis.zrange<RawStatsProps[]>(
-      `dub.sh:clicks:${key}`,
+      `go.ginetta.net:clicks:${key}`,
       start,
       end,
       {

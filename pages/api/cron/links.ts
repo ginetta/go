@@ -12,16 +12,16 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
   try {
     const aWeekAgo = Date.now() - 1000 * 60 * 60 * 24 * 7;
     const links = await redis.zrange<string[]>(
-      "dub.sh:links:timestamps:generic",
+      "go.ginetta.net:links:timestamps:generic",
       0,
       aWeekAgo,
       { byScore: true }
     );
     const pipeline = redis.pipeline();
     for (const link of links) {
-      pipeline.zrem("dub.sh:links:timestamps:generic", link);
-      pipeline.hdel("dub.sh:links", link);
-      pipeline.del(`dub.sh:clicks:${link}`);
+      pipeline.zrem("go.ginetta.net:links:timestamps:generic", link);
+      pipeline.hdel("go.ginetta.net:links", link);
+      pipeline.del(`go.ginetta.net:clicks:${link}`);
     }
     const [results, _] = await Promise.all([
       pipeline.exec(),

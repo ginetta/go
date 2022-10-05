@@ -18,7 +18,7 @@ export default async function RootMiddleware(
     hostname === "preview.dub.sh" ||
     hostname.endsWith(".vercel.app")
   ) {
-    ev.waitUntil(redis.incr("dub.sh:root:clicks")); // increment root clicks (only for dub.sh)
+    ev.waitUntil(redis.incr("go.ginetta.net:root:clicks")); // increment root clicks (only for dub.sh)
   } else {
     ev.waitUntil(recordClick(hostname, req)); // record clicks on root page (if hostname is not dub.sh)
   }
