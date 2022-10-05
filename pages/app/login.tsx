@@ -37,7 +37,7 @@ export default function Login() {
                   if (res?.ok && !res?.error) {
                     setButtonText("Email sent - check your inbox!");
                   } else {
-                    setButtonText("Error sending email - try again?");
+                    setButtonText("Login error - try again?");
                   }
                 });
               } else {

@@ -36,6 +36,12 @@ export const authOptions: NextAuthOptions = {
       };
       return session;
     },
+    signIn: async ({ user, account, profile, email, credentials }) => {
+      if (email.verificationRequest && user.email && !user.email.endsWith('ginetta.net'))   {
+        return false;     
+      }
+      return true;
+    }
   },
 };
 

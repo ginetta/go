@@ -5,6 +5,7 @@ export const config = {
   runtime: "experimental-edge",
 };
 
+const LINK_DOMAIN='go.ginetta.net'
 export default async function handler(req: NextRequest) {
   if (req.method === "POST") {
     const url = req.nextUrl.searchParams.get("url");
@@ -14,7 +15,7 @@ export default async function handler(req: NextRequest) {
     const { response, key } = await setRandomKey("dub.sh", url);
     if (response === 1) {
       // if key was successfully added
-      await redis.zadd(`dub.sh:links:timestamps:generic`, {
+      await redis.zadd(`go.ginetta.net:links:timestamps:generic`, {
         score: Date.now(),
         member: key,
       });
