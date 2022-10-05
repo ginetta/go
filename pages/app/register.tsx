@@ -16,7 +16,7 @@ export default function Login() {
       <div className="flex flex-col space-y-4 w-full max-w-md py-12 px-4 sm:px-16 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl">
         <h1 className="font-bold font-display text-3xl">Sign Up</h1>
         <p className="text-gray-600 text-sm">
-          Get started for free. No credit card required.
+          Invitation-only URL shortener based on <a href="https://dub.sh/">Dub</a> by <a href="https://dub.sh/">Steven Tey</a>
         </p>
         <form
           onSubmit={async (e) => {

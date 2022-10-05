@@ -36,7 +36,7 @@ export default function Home({ stars }: { stars: number }) {
     <HomeLayout>
       <StatsModal />
       <Hero />
-      <Demo />
+      {/* <Demo /> */}
       <Globe />
       <Features stars={stars} />
       <Pricing />

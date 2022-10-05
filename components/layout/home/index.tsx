@@ -18,10 +18,10 @@ export default function HomeLayout({
       <Meta />
       <div className="bg-white z-20">
         <div className="max-w-screen-xl mx-auto px-5 sm:px-20">
-          <div className="h-16 flex justify-between items-center">
+          <div className="h-24 flex justify-between items-center">
             <div className="flex items-center">
               {domain ? (
-                <a href="https://dub.sh" target="_blank" rel="noreferrer">
+                <a href="https://ginetta.net" target="_blank" rel="noreferrer">
                   <Image
                     src="/static/logotype.svg"
                     alt="Dub.sh logo"
@@ -31,16 +31,27 @@ export default function HomeLayout({
                   />
                 </a>
               ) : (
-                <Link href="/">
-                  <a>
-                    <Image
-                      src="/static/logotype.svg"
-                      alt="Dub.sh logo"
-                      width={834}
-                      height={236}
-                      className="w-24"
-                    />
-                  </a>
+                <Link href="https://ginetta.net">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    focusable="false"
+                  >
+                    <path
+                      d="M32 47a8 8 0 008-8H24a8 8 0 008 8z"
+                      fill="var(--logo)"
+                    ></path>
+                    <circle cx="32" cy="26" r="8" fill="var(--logo)"></circle>
+                    <path
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M64 32c0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0c17.673 0 32 14.327 32 32zM32 47a8 8 0 008-8H24a8 8 0 008 8zm0-13a8 8 0 100-16 8 8 0 000 16z"
+                    ></path>
+                  </svg>
                 </Link>
               )}
             </div>

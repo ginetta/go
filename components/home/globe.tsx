@@ -47,6 +47,8 @@ export default function Globe({ hostname }: { hostname?: string }) {
     }
   }, []);
 
+  hostname = (hostname)? hostname : "go.ginetta.net";
+
   const { data: markers } = useSWR<MarkerProps[]>(
     `/api/edge/coordinates${hostname ? `?hostname=${hostname}` : ""}`,
     fetcher
@@ -161,12 +163,12 @@ const GlobeAnimation = ({
               <a
                 className="text-blue-800 font-semibold"
                 href={
-                  hostname ? `https://${hostname}` : "https://dub.sh/github"
+                  hostname ? `https://${hostname}` : "https://go.ginetta.net"
                 }
                 target="_blank"
                 rel="noreferrer"
               >
-                {hostname || "dub.sh/github"}
+                {hostname || "go.ginetta.net"}
               </a>{" "}
               in real time.
             </p>
