@@ -14,6 +14,7 @@ export default async function handler(
 
   // GET /api/projects – get all projects associated with the authenticated user
   if (req.method === "GET") {
+    // TODO SAM: replace with findMany() to share projects with everyone who has an account?
     const response = await prisma.project.findMany({
       where: {
         users: {

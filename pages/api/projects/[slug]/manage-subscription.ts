@@ -12,7 +12,7 @@ export default withProjectAuth(
         customer: project.stripeId,
         return_url: `${
           process.env.VERCEL === "1"
-            ? "https://app.dub.sh"
+            ? "https://go-admin.ginetta.net" 
             : "http://app.localhost:3000"
         }/${slug}/settings`,
       });

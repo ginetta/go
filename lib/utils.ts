@@ -50,7 +50,7 @@ export function nFormatter(num: number, digits?: number) {
 
 export function linkConstructor({
   key,
-  domain = "dub.sh",
+  domain = "go.ginetta.net",
   localhost,
   pretty,
 }: {

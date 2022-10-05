@@ -46,14 +46,14 @@ export default function HomeLayout({
             </div>
             {session ? (
               <a
-                href="https://app.dub.sh"
+                href="https://go-admin.ginetta.net"
                 className="py-1.5 px-5 bg-black hover:bg-white rounded-full border border-black text-sm text-white hover:text-black transition-all"
               >
                 Dashboard
               </a>
             ) : (
               <a
-                href="https://app.dub.sh/login"
+                href="https://go-admin.ginetta.net/login"
                 className="py-1.5 px-5 bg-black hover:bg-white rounded-full border border-black text-sm text-white hover:text-black transition-all"
               >
                 Sign in

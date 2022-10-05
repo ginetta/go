@@ -12,12 +12,12 @@ export default withProjectAuth(
         billing_address_collection: "required",
         success_url: `${
           process.env.VERCEL === "1"
-            ? "https://app.dub.sh"
+            ? "https://go-admin.ginetta.net" 
             : "http://app.localhost:3000"
         }/${slug}/settings`,
         cancel_url: `${
           process.env.VERCEL === "1"
-            ? "https://app.dub.sh"
+            ? "https://go-admin.ginetta.net" 
             : "http://app.localhost:3000"
         }/${slug}/settings`,
         line_items: [{ price: process.env.STRIPE_PRO_PRICE_ID, quantity: 1 }],

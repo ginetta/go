@@ -80,7 +80,7 @@ const Features = ({ stars }: { stars: number }) => {
               when building your brand. That's why we offer free custom domains
               on all plans.
             </p>
-            <Link href="https://app.dub.sh">
+            <Link href="https://go-admin.ginetta.net">
               <a className="rounded-full px-4 py-1.5 bg-black text-white hover:bg-white hover:text-black text-sm border border-black block max-w-fit transition-all">
                 Create your project
               </a>

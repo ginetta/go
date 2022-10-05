@@ -42,8 +42,8 @@ export default async function LinkMiddleware(
       ev.waitUntil(recordClick(hostname, req, key)); // increment click count
 
       if (image && description && isBot) {
-        // rewrite to proxy page (dub.sh/proxy/[domain]/[key])
-        res = NextResponse.rewrite(`https://dub.sh/proxy/${hostname}/${key}`);
+        // rewrite to proxy page (go.ginetta.net/proxy/[domain]/[key])
+        res = NextResponse.rewrite(`https://go.ginetta.net/proxy/${hostname}/${key}`);
       } else {
         res = NextResponse.redirect(target);
       }

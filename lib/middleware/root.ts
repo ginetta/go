@@ -13,6 +13,7 @@ export default async function RootMiddleware(
   }
 
   if (
+    hostname === "go.ginetta.net" ||
     hostname === "dub.sh" ||
     hostname === "preview.dub.sh" ||
     hostname.endsWith(".vercel.app")
@@ -23,6 +24,7 @@ export default async function RootMiddleware(
   }
 
   if (
+    hostname === "go.ginetta.net" ||
     hostname === "dub.sh" ||
     hostname === "preview.dub.sh" ||
     hostname.endsWith(".vercel.app")

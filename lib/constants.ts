@@ -1,9 +1,8 @@
 export const LOCALHOST_GEO_DATA = {
-  city: "San Francisco",
-  region: "CA",
-  country: "US",
-  latitude: "37.7695",
-  longitude: "-122.385",
+  city: "Zurich",
+  country: "CH",
+  latitude: "47.38",
+  longitude: "8.54",
 };
 
 export const INTERVALS = ["1h", "24h", "7d", "30d"];
@@ -16,6 +15,7 @@ export const FRAMER_MOTION_LIST_ITEM_VARIANTS = {
 export const HOME_HOSTNAMES = new Set([
   // comment for better diffs
   "dub.sh",
+  "go.ginetta.net",
   "preview.dub.sh",
   "localhost:3000",
 ]);
@@ -40,14 +40,14 @@ export const RESERVED_KEYS = new Set([
 ]);
 
 export const DEFAULT_REDIRECTS = {
-  home: "https://dub.sh",
-  signin: "https://app.dub.sh/login",
-  login: "https://app.dub.sh/login",
-  register: "https://app.dub.sh/register",
-  signup: "https://app.dub.sh/register",
-  app: "https://app.dub.sh",
-  dashboard: "https://app.dub.sh",
-  links: "https://app.dub.sh/links",
+  home: "https://go.ginetta.net",
+  signin: "https://go-admin.ginetta.net/login",
+  login: "https://go-admin.ginetta.net/login",
+  register: "https://go-admin.ginetta.net/register",
+  signup: "https://go-admin.ginetta.net/register",
+  app: "https://go-admin.ginetta.net",
+  dashboard: "https://go-admin.ginetta.net",
+  links: "https://go-admin.ginetta.net/links",
 };
 
 export const COUNTRIES: { [key: string]: string } = {

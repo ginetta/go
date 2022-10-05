@@ -34,7 +34,7 @@ const pricingItems = [
       { text: "SSO/SAML", negative: true },
     ],
     cta: "Start for free",
-    ctaLink: "https://app.dub.sh/register",
+    ctaLink: "https://go-admin.ginetta.net/register",
   },
   {
     plan: "Pro",
@@ -57,7 +57,7 @@ const pricingItems = [
       { text: "SSO/SAML", negative: true },
     ],
     cta: "Get started",
-    ctaLink: "https://app.dub.sh/register",
+    ctaLink: "https://go-admin.ginetta.net/register",
   },
   {
     plan: "Enterprise",
