@@ -7,12 +7,12 @@ const Hero = () => {
       <h1 className="text-5xl sm:text-6xl leading-tight sm:leading-tight font-display font-extrabold text-black mt-5">
         Ginetta
         <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-ginettaGreen via-ginettaBlue to-ginettaPink">
           Link Shortener
         </span>
       </h1>
       <p className="text-gray-600 text-xl sm:text-2xl mt-5">
-        based on Dub, an open-source link shortener.
+        based on Dub ❤️
       </p>
 
       <div className="mt-10 flex space-x-4 max-w-fit mx-auto">

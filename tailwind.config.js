@@ -9,6 +9,11 @@ module.exports = {
       fontFamily: {
         display: ["Satoshi-Variable, system-ui", "sans-serif"],
       },
+      colors: {
+        ginettaGreen: "#42775B",
+        ginettaBlue: "#3347D6",
+        ginettaPink: "#852DBD",
+      },
       animation: {
         // Tooltip
         "slide-up-fade": "slide-up-fade 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
