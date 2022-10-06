@@ -26,8 +26,7 @@ export default async function handler(
     }
     const response = await addLink(
       "go.ginetta.net",
-      { url, key, title },
-      session.user.id
+      { url, key, title }
     );
 
     if (response === null) {
