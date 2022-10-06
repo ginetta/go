@@ -11,7 +11,7 @@ export default async function handler(req: NextRequest) {
     const numPoints = 30;
     const hostname = req.nextUrl.searchParams.get("hostname");
     const rawData = await redis.zrange<RawStatsProps[]>(
-      hostname ? `${hostname}:root:clicks` : "go.ginetta.net:clicks:github",
+      hostname ? `${hostname}:root:clicks` : "go.ginetta.net:root:clicks",
       0,
       numPoints,
       { rev: true }
